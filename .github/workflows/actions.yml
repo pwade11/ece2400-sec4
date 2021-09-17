@@ -21,6 +21,10 @@ jobs:
         run: |-
           gcc -g -coverage -o avg-test avg-test.c ece2400-stdlib.c
           ./avg-test
+      - name: sort test
+        run: |-
+          gcc -g -coverage -o sort-test sort-test.c ece2400-stdlib.c
+          ./sort-test
 
       - name: coverage
         run: |-
